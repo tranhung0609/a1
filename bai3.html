@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="v" type="text">
+<input id="c" type="text">
+<button onclick="a1()">ấn</button>
+<h1 id="x">kết quả</h1>
+<script>
+    function a1(){
+        let b1 = document.getElementById("v").value;
+        let b2 = document.getElementById("c").value;
+        let kq = b1 * b2;
+        document.getElementById("x").innerHTML = kq
+    }
+</script>
+</body>
+</html>
