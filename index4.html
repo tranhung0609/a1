@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="text">
+<input id="b" type="text">
+<input id="c" type="text">
+<button onclick="a1()">Clickme</button>
+<h1 id="kq"></h1>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let c = document.getElementById("c");
+    let kq = document.getElementById("kq");
+
+    function a1() {
+        let ca = a.value;
+        let cb = b.value;
+        let cc = c.value;
+        let rs = ""
+        if (ca+cb > cc && ca+cc > cb && cb+cc > ca) {
+            rs = "tam giác"
+            if (ca==cb && cb==cc) {
+                rs = "tam giác đều"
+            } else if (ca==cb || cb==cc || cc==ca) {
+                rs = "tam giác cân"
+            }
+            if (ca*ca + cb*cb == cc*cc || ca*ca == cb*cb + cc*cc || cb*cb == ca*ca + cc*cc) {
+                rs = "tam giác vuông"
+            }
+        }
+        kq.innerHTML = rs;
+    }
+
+</script>
+</body>
+</html>
