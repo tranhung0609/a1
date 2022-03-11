@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <title>Tính cân nặng</title>
     <style>
+        body{
+            background: url("https://viknews.com/wp-content/uploads/2021/12/anh-tho-chibi.011-1024x534-1.jpg");
+            background-size: cover;
+        }
         h1{
-            color: red;
+            color: black;
             text-align: center;
+
         }
     </style>
 </head>
 <body>
 <h1 id="a"></h1>
 <script>
-    var cn = eval(prompt("NHẬP SỐ CÂN CỦA BẠN VÀO ĐÂY"));
-    var cc = eval(prompt("CHIỀU CAO NHÉ. TÍNH BẰNG (m) CHỨ KHÔNG PHẢI (cm) ĐÂU =)))"));
+    let cn = eval(prompt("NHẬP SỐ CÂN CỦA BẠN VÀO ĐÂY"));
+    let cc = eval(prompt("CHIỀU CAO NHÉ. TÍNH BẰNG (m) CHỨ KHÔNG PHẢI (cm) ĐÂU =)))"));
     var a = document.getElementById("a");
     var bmi = cn/(cc*cc);
     if (bmi<18.5 ){
