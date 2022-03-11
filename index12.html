@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cân nặng</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="a"></h1>
+<script>
+    var cn = eval(prompt("NHẬP SỐ CÂN CỦA BẠN VÀO ĐÂY"));
+    var cc = eval(prompt("CHIỀU CAO NHÉ. TÍNH BẰNG (m) CHỨ KHÔNG PHẢI (cm) ĐÂU =)))"));
+    var a = document.getElementById("a");
+    var bmi = cn/(cc*cc);
+    if (bmi<18.5 ){
+        a.innerHTML = "DẠO NÀY GẦY. THƯƠNG THẾ <3"
+    } else if (18.5 <= bmi && bmi < 25){
+        a.innerHTML = "CŨNG RA GÌ ĐẤY. NGON ZAI ĐẤY =))"
+    } else if (25 <= bmi && bmi < 30){
+        a.innerHTML = "MŨM MĨM MỚI DỄ THƯƠNG :))"
+    } else {
+        a.innerHTML = "CỐ THÊM CHÚT NỮA SẮP TIỂU ĐƯỜNG RỒI"
+    }
+</script>
+</body>
+</html>
